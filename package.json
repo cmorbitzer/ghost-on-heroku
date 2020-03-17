@@ -26,7 +26,7 @@
     "liebling": "github:snathjr/liebling"
   },
   "engines": {
-    "node": "10.X"
+    "node": "12.x"
   },
   "scripts": {
     "start": "node server.js",
