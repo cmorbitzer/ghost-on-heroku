@@ -1,3 +1,10 @@
+**NOTE:** This is a fork that remains up-to-date with https://github.com/SNathJr/ghost-on-heroku, but maintains separate branches for different deployment templates:
+
+- [default](https://github.com/cmorbitzer/ghost-on-heroku/tree/default): Updates dependencies and uses the latest Node runtime.
+- [s3](https://github.com/cmorbitzer/ghost-on-heroku/tree/s3): Requires S3 and removes support for Cloudinary and other storage solutions.
+- [no-templates](https://github.com/cmorbitzer/ghost-on-heroku/tree/no-templates): Removes all templates. This deployment will not work on its own. At least one template must be added to `content/themes` before deployment.
+- [s3-no-templates](https://github.com/cmorbitzer/ghost-on-heroku/tree/no-templates-s3): Combination of `s3` and `no-templates`.
+
 # [Ghost 3.X](https://github.com/TryGhost/Ghost) on [Heroku](http://heroku.com)
 
 Ghost is a free, open, simple blogging platform. Visit the project's website at <http://ghost.org>, or read the docs on <http://support.ghost.org>.
