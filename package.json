@@ -10,26 +10,15 @@
   "private": true,
   "version": "3.2.0",
   "dependencies": {
-    "attila": "github:zutrinken/attila#1.13.0",
-    "bleak": "github:zutrinken/bleak#1.4.0",
-    "casper": "github:tryghost/Casper#3.0.4",
     "ghost": "^3.2.0",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.0.2",
-    "london": "github:tryghost/london#1.0.0",
-    "massively": "github:tryghost/massively#1.0.2",
-    "mysql": "^2.17.1",
-    "the-shell": "github:mityalebedev/The-Shell#v2.0.0",
-    "vapor": "github:sethlilly/Vapor#v1.6.0",
-    "pico": "github:tryghost/pico",
-    "lyra": "github:tryghost/lyra",
-    "liebling": "github:snathjr/liebling"
+    "mysql": "^2.17.1"
   },
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bash bin/copy-themes.sh"
+    "start": "node server.js"
   }
 }
