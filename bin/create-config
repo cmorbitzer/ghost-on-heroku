@@ -35,26 +35,6 @@ function createConfig() {
         assetHost:       process.env.S3_ASSET_HOST_URL
       }
     }
-  } else if (!!process.env.CLOUDINARY_URL) {
-    fileStorage = true
-    storage = {
-      active: 'ghost-storage-cloudinary',
-      'ghost-storage-cloudinary': {
-        useDatedFolder: false,
-        upload: {
-          use_filename: true,
-          unique_filename: false,
-          overwrite: false,
-          folder: "ghost-blog-images",
-          tags: ["blog"]
-        },
-        fetch: {
-          quality: "auto",
-          secure: true,
-          cdn_subdomain: true
-        }
-      }
-    }
   } else {
     fileStorage = false
     storage = {}
