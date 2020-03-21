@@ -1,5 +1,6 @@
 themes=(
 	casper
+	casper-disqus
 	attila
 	london
 	massively
