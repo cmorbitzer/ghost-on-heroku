@@ -7,9 +7,9 @@ var parentApp = express();
 parentApp.use(function (req, res, next) {
   if (!req.hostname.startsWith('www')) {
     res.redirect('https://www.' + req.hostname + req.url, 301);
+  } else {
+    next();
   }
-
-  next(req);
 });
 
 // Run a single Ghost process
