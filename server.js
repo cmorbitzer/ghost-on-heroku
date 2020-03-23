@@ -3,6 +3,15 @@ var express = require("express");
 var urlService = require("./node_modules/ghost/core/frontend/services/url");
 var parentApp = express();
 
+// Force www
+parentApp.use(function (req, res, next) {
+  if (!req.hostname.startsWith('www')) {
+    res.redirect('https://www.' + req.hostname + req.url, 301);
+  }
+
+  next(req);
+});
+
 // Run a single Ghost process
 ghost()
   .then(function(ghostServer) {
