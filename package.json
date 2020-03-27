@@ -13,7 +13,7 @@
     "attila": "github:zutrinken/attila",
     "bleak": "github:zutrinken/bleak",
     "casper": "github:tryghost/Casper",
-    "ghost": "3.11.0",
+    "ghost": "^3.12.1",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.0.2",
     "liebling": "github:snathjr/liebling",
